@@ -4,8 +4,8 @@ from langchain_core.messages import SystemMessage, HumanMessage
 
 class mood_model:
     def __init__(self):
-        self.ap_key = ''
-        self.llm = ChatGroq(model="openai/gpt-oss-120b", temperature=1, ap_key=self.api)
+        self.api_key = ''
+        self.llm = ChatGroq(model="openai/gpt-oss-120b", temperature=1, api_key=self.api)
         
         self.sys_prompt = """You are a scholar of human wisdom and an expert curator of historically significant quotations. 
             Your role is to select a single, real, verifiable quote from a prominent historical figure — a philosopher, scientist, statesperson, artist, athlete, author, civil rights leader, or thinker — whose words speak directly to the emotional and psychological state of someone at work right now.
